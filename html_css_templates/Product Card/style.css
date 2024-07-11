@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #0b1014;
+    background: #000000;
 }
 .card{
     position: relative;
