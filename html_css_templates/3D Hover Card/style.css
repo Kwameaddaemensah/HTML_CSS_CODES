@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    font-family: 'Nunito', sans-serif;
+    background: #454545;
+}
+
+.card1{
+    width: 250px;
+    height: 350px;
+    background-image:  url("./bmw.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid white;
+    transform-style: preserve-3d;
+}
+
+.card1 h1{
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.hover-image-bmw{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    width: 150%;
+    height: 140%;
+    background-image: url('./2024-bmw-m5-unofficial-renderings-removebg-preview.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.6s;
+}
+
+.card1:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./bmw.jpeg");
+}
+
+.card1:hover .hover-image-bmw{
+    top: 35%;
+    opacity: 1;
+}
+
+.card1:hover h1{
+    font-size: 30px;
+    text-shadow: 0px 0px 10px white,
+                 0px 0px 20px white;
+}
+
+
+
+.card2{
+    width: 250px;
+    height: 350px;
+    background-image: url("./mer.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.card2 h1{
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.hover-image-benz{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    width: 200%;
+    height: 200%;
+    background-image: url('./_mg_8205-removebg-preview.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.6s;
+}
+
+.card2:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./mer.jpeg");
+}
+
+.card2:hover .hover-image-benz{
+    top: 35%;
+    opacity: 1;
+}
+
+.card2:hover h1{
+    font-size: 30px;
+    text-shadow: 0px 0px 10px white,
+                 0px 0px 20px white;
+}
